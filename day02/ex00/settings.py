@@ -1,0 +1,5 @@
+title = "My Resume"
+name = "John"
+surname = "Doe"
+age = "30"
+profession = "Software Engineer"
