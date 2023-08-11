@@ -1,0 +1,11 @@
+1 - # Crie um novo aplicativo chamado ex02.
+    # Crie uma página acessível na URL /ex02.
+    # Nesta página, inclua um formulário e uma seção para exibir o histórico de entradas.
+
+2 - # Armazenar esse log em um arquivo
+
+3 - <!-- monte um form com um botao e um input -->
+
+4 - <!-- importa o base.html  -->
+
+5 - # Crie um formulário usando a classe django.forms.Form

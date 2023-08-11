@@ -1,0 +1,9 @@
+1 - <!-- monte uma tabela de cores -->
+
+2 - # Armazenar esse log em um arquivo
+
+3 - # Criar um conjunto de tags <td></td> para cada célula da tonalidade de cor.
+
+4 - # Certificar-se de que existem exatamente 4 conjuntos de tags <td></td> e 4 conjuntos de tags <th></th>.
+
+5 - <!-- inclui os arquivos necessários -->

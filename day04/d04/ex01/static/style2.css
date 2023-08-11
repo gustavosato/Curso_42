@@ -1,0 +1,11 @@
+/* faz todas a letras da pagina ficar vermelha e deixar o conteiner todo no centro */
+* {
+    color: red;
+    text-align: center;
+}
+
+/* faz o content ficar no centro da pagina */
+.content {
+    margin: 0 auto;
+    width: 500px;
+}

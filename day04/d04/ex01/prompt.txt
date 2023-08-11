@@ -1,0 +1,13 @@
+1 - # Criar uma página que explique de forma breve o que é o Django e sua história.
+
+2 - # Criar uma página que explique o processo de exibição de uma página estática a partir de um modelo simples, passando por uma exibição, desde a solicitação até a resposta.
+    # Definir o título como "Ex01: Display process of a static page".
+    # A página deve estar disponível na URL /ex01/display.
+
+3 - # Criar uma página que descreva o funcionamento do mecanismo de template padrão do Django, incluindo blocos, loops 'for', estruturas de controle 'if' e a exibição de variáveis de contexto.
+    # Definir o título como "Ex01: Template engine".
+    # A página deve estar disponível na URL /ex01/templates.
+
+4 - <!-- Gerar um conteudo sobre o django-->
+
+5 - <!-- Gerar um conteudo sobre o template do django-->

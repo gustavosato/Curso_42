@@ -1,0 +1,9 @@
+1 - # Como criar um virtual environment com python3 e instalar o Django?
+
+2 - # Como gerar um arquivo requirements.txt a partir das dependências instaladas em um virtual environment?
+
+3 - # Como iniciar um projeto Django chamado d04 e criar um aplicativo chamado ex00?
+
+4 - # adicionar a urlpatterns com o nome ex00
+
+5 - # Configure o SETTINGS_PATH

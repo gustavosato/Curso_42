@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ex00: Markdown Cheatsheet.</title>
+    <!--  me gere o css desse aquivo html -->
+    <style>
+      .markdown-body {
+        box-sizing: border-box;
+        min-width: 200px;
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 45px;
+      }
+      .hljs {
+        display: block;
+        overflow-x: auto;
+        padding: 0.5em;
+        background: #f0f0f0;
+      }
+
+      .hljs,
+      .hljs-tag,
+
+      .hljs-subst {
+        color: #444;
+      }
+
+      .hljs-strong,
+      .hljs-emphasis {
+        color: #bb4444;
+      }
+
+      .hljs-bullet,
+      .hljs-quote,
+      .hljs-number,
+      .hljs-regexp,
+      .hljs-literal,
+      .hljs-link {
+        color: #00aabb;
+      }
+
+      .hljs-code,
+      .hljs-title,
+      .hljs-section,
+      .hljs-selector-class {
+        color: #bb4444;
+      }
+
+      .hljs-strong {
+        font-weight: bold;
+      }
+
+      .hljs-emphasis {
+        font-style: italic;
+      }
+
+      .hljs-keyword,
+      .hljs-selector-tag,
+      .hljs-name {
+        color: #000;
+        font-weight: bold;
+      }
+
+      .hljs-attribute,
+      .hljs-attr,
+      .hljs-variable,
+      .hljs-template-variable,
+      .hljs-class .hljs-title,
+      .hljs-type {
+        color: #00aabb;
+      }
+
+      .hljs-symbol,
+      .hljs-bullet,
+      .hljs-subst,
+      .hljs-meta,
+      .hljs-meta .hljs-keyword,
+      .hljs-selector-id,
+      .hljs-selector-attr,
+      .hljs-selector-pseudo,
+      .hljs-addition,
+      .hljs-deletion {
+        color: #00aabb;
+      }
+
+      .hljs-built_in,
+      .hljs-formula {
+        color: #00aabb;
+      }
+
+      .hljs-comment,
+      .hljs-quote,
+      .hljs-doctag,
+      .hljs-deletion,
+      .hljs-title,
+      .hljs-section,
+      .hljs-selector-pseudo,
+      .hljs-subst {
+        color: #777;
+      }
+
+      .hljs-literal {
+        color: #777;
+      }
+      .hljs-string,
+      .hljs-regexp,
+      .hljs-addition,
+      .hljs-meta .hljs-string {
+        color: #777;
+      }
+
+      .hljs-built_in,
+      .hljs-char,
+      .hljs-attr,
+      .hljs-variable,
+      .hljs-template-variable,
+      .hljs-type,
+      .hljs-selector-class,
+      .hljs-selector-attr,
+      .hljs-selector-id {
+        color: #444;
+      }
+
+      .hljs-selector-tag {
+        color: #00aabb;
+      }
+
+      .hljs-template-tag,
+      .hljs-name,
+      .hljs-attribute {
+        color: #bb4444;
+      }
+
+      .hljs-regexp,
+      .hljs-link {
+        text-decoration: underline;
+      }
+
+      .hljs-strong {
+        font-weight: bold;
+      }
+
+      .hljs-emphasis {
+        font-style: italic;
+      }
+
+      .markdown-body pre > code {
+        padding: 0.5em;
+        font-size: 85%;
+        border-radius: 3px;
+      }
+
+      .markdown-body table {
+        display: block;
+        width: 100%;
+        overflow: auto;
+        border-spacing: 0;
+        border-collapse: collapse;
+      }
+
+      .markdown-body table th {
+        font-weight: bold;
+      }
+
+      .markdown-body table th,
+      .markdown-body table td {
+        padding: 6px 13px;
+        border: 1px solid #ddd;
+      }
+
+      .markdown-body table tr {
+        background-color: #fff;
+        border-top: 1px solid #ccc;
+      }
+
+      .markdown-body table tr:nth-child(2n) {
+        background-color: #f8f8f8;
+      }
+
+      .markdown-body img {
+        max-width: 100%;
+        box-sizing: border-box;
+        background-color: #fff;
+      }
+
+      .markdown-body img[align='right'] {
+        padding-left: 20px;
+      }
+
+      .markdown-body img[align='left'] {
+        padding-right: 20px;
+      }
+
+      .markdown-body .task-list-item {
+        list-style-type: none;
+      }
+
+      .markdown-body .task-list-item + .task-list-item {
+        margin-top: 3px;
+      }
+
+      .markdown-body .task-list-item input {
+        margin: 0 0.35em 0.25em -1.6em;
+        vertical-align: middle;
+      }
+
+      .markdown-body hr {
+        height: 4px;
+        padding: 0;
+        margin: 16px 0;
+        background-color: #e7e7e7;
+        border: 0 none;
+        overflow: hidden;
+        box-sizing: content-box;
+      }
+
+      .markdown-body kbd {
+        display: inline-block;
+        padding: 3px 5px;
+        font: 11px SF
+        Mono, Segoe UI Mono, Consolas, Monaco, Lucida Console, monospace;
+        line-height: 10px;
+        color: #444;
+        vertical-align: middle;
+        background-color: #f7f7f7;
+        border: solid 1px #ccc;
+        border-bottom-color: #bbb;
+        border-radius: 3px;
+        box-shadow: inset 0 -1px 0 #bbb;
+      }
+
+    </style>
+
+
+  <body>
+
+    <div
+      class="markdown-body"
+      style="width: 720px; margin-right: auto; margin-left: auto; padding: 10px"
+    >
+      <h1 id="markdown-cheatsheet-a-name-top-a-">
+        Markdown Cheatsheet<a name="TOP"></a>
+      </h1>
+      <hr />
+      <h1 id="heading-1">Heading 1</h1>
+      <pre><code>Markup :  # <span class="hljs-type">Heading</span> <span class="hljs-number">1</span> #
+
+-<span class="hljs-keyword">OR</span>-
+
+Markup :  ============= (<span class="hljs-type">below</span> H1 text)
+</code></pre>
+      <h2 id="heading-2">Heading 2</h2>
+      <pre><code>Markup :  ## Heading <span class="hljs-number">2</span> ##
+
+-OR-
+
+Markup: --------------- (below H2 text)
+</code></pre>
+      <h3 id="heading-3">Heading 3</h3>
+      <pre><code>Markup :  ### Heading <span class="hljs-number">3</span> ###
+</code></pre>
+      <h4 id="heading-4">Heading 4</h4>
+      <pre><code>Markup :  #### Heading <span class="hljs-number">4</span> ####
+</code></pre>
+      <p>Common text</p>
+      <pre><code><span class="hljs-keyword">Markup </span>:  <span class="hljs-meta">Common</span> text
+</code></pre>
+      <p><em>Emphasized text</em></p>
+      <pre><code>Markup :  _<span class="hljs-type">Emphasized</span> text_ <span class="hljs-keyword">or</span> *Emphasized text*
+</code></pre>
+      <p><del>Strikethrough text</del></p>
+      <pre><code><span class="hljs-keyword">Markup </span>:  ~~<span class="hljs-keyword">Strikethrough </span>text~~
+</code></pre>
+      <p><strong>Strong text</strong></p>
+      <pre><code>Markup :  __Strong text__ <span class="hljs-keyword">or</span> **<span class="hljs-keyword">Strong</span> <span class="hljs-literal">text</span>**
+</code></pre>
+      <p>
+        <strong><em>Strong emphasized text</em></strong>
+      </p>
+      <pre><code>Markup :  ___Strong emphasized text___ <span class="hljs-keyword">or</span> ***<span class="hljs-keyword">Strong</span> emphasized <span class="hljs-literal">text</span>***
+</code></pre>
+      <p>
+        <a href="http://www.google.fr/" title="Named link title">Named Link</a>
+        and <a href="http://www.google.fr/">http://www.google.fr/</a> or
+        <a href="http://example.com/">http://example.com/</a>
+      </p>
+      <pre><code>Markup :  [<span class="hljs-string">Named Link</span>](<span class="hljs-link">http://www.google.fr/ "Named link title"</span>) and http://www.google.fr/ or <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">http:</span>//<span class="hljs-attr">example.com</span>/&gt;</span></span>
+</code></pre>
+      <p><a href="#heading-1" title="Goto heading-1">heading-1</a></p>
+      <pre><code>Markup: [<span class="hljs-string">heading-1</span>](<span class="hljs-link">#heading-1 "Goto heading-1"</span>)
+</code></pre>
+      <p>Table, like this one :</p>
+      <table>
+        <thead>
+          <tr>
+            <th>First Header</th>
+            <th>Second Header</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Content Cell</td>
+            <td>Content Cell</td>
+          </tr>
+          <tr>
+            <td>Content Cell</td>
+            <td>Content Cell</td>
+          </tr>
+        </tbody>
+      </table>
+      <pre><code>First Header  | <span class="hljs-built_in">Second</span> Header
+------------- | -------------
+Content <span class="hljs-built_in">Cell</span>  | Content <span class="hljs-built_in">Cell</span>
+Content <span class="hljs-built_in">Cell</span>  | Content <span class="hljs-built_in">Cell</span>
+</code></pre>
+      <p>Adding a pipe <code>|</code> in a cell :</p>
+      <table>
+        <thead>
+          <tr>
+            <th>First Header</th>
+            <th>Second Header</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Content Cell</td>
+            <td>Content Cell</td>
+          </tr>
+          <tr>
+            <td>Content Cell</td>
+            <td>\</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <pre><code>First Header  |<span class="hljs-string"> Second Header
+------------- </span>|<span class="hljs-string"> -------------
+Content Cell  </span>|<span class="hljs-string"> Content Cell
+Content Cell  </span>|<span class="hljs-string">  \</span>|
+</code></pre>
+      <p>Left, right and center aligned table</p>
+      <p>
+        Left aligned Header | Right aligned Header | Center aligned Header |
+        :--- | ---: | :---: Content Cell | Content Cell | Content Cell Content
+        Cell | Content Cell | Content Cell
+      </p>
+      <pre><code>Left aligned Header |<span class="hljs-string"> Right aligned Header </span>|<span class="hljs-string"> Center aligned Header
+</span>|<span class="hljs-string"> :--- </span>|<span class="hljs-string"> ---: </span>|<span class="hljs-string"> :---:
+Content Cell  </span>|<span class="hljs-string"> Content Cell </span>|<span class="hljs-string"> Content Cell
+Content Cell  </span>|<span class="hljs-string"> Content Cell </span>|<span class="hljs-string"> Content Cell</span>
+</code></pre>
+      <p><code>code()</code></p>
+      <pre><code>Markup :  `<span class="hljs-keyword">code</span>()`
+</code></pre>
+      <pre><code class="lang-javascript">    var specificLanguage_code =
+    {
+        <span class="hljs-string">"data"</span>: {
+            <span class="hljs-string">"lookedUpPlatform"</span>: <span class="hljs-number">1</span>,
+            <span class="hljs-string">"query"</span>: <span class="hljs-string">"Kasabian+Test+Transmission"</span>,
+            <span class="hljs-string">"lookedUpItem"</span>: {
+                <span class="hljs-string">"name"</span>: <span class="hljs-string">"Test Transmission"</span>,
+                <span class="hljs-string">"artist"</span>: <span class="hljs-string">"Kasabian"</span>,
+                <span class="hljs-string">"album"</span>: <span class="hljs-string">"Kasabian"</span>,
+                <span class="hljs-string">"picture"</span>: null,
+                <span class="hljs-string">"link"</span>: <span class="hljs-string">"http://open.spotify.com/track/5jhJur5n4fasblLSCOcrTp"</span>
+            }
+        }
+    }
+</code></pre>
+      <pre><code>Markup : ```javascript
+         ```
+</code></pre>
+      <ul>
+        <li>
+          Bullet list
+          <ul>
+            <li>
+              Nested bullet
+              <ul>
+                <li>Sub-nested bullet etc</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>Bullet list item 2</li>
+      </ul>
+      <pre><code> <span class="hljs-keyword">Markup </span>: * <span class="hljs-keyword">Bullet </span>list
+              * Nested <span class="hljs-keyword">bullet
+</span>                  * <span class="hljs-keyword">Sub-nested </span><span class="hljs-keyword">bullet </span>etc
+          * <span class="hljs-keyword">Bullet </span>list <span class="hljs-keyword">item </span><span class="hljs-number">2</span>
+
+-OR-
+
+ <span class="hljs-keyword">Markup </span>: - <span class="hljs-keyword">Bullet </span>list
+              - Nested <span class="hljs-keyword">bullet
+</span>                  - <span class="hljs-keyword">Sub-nested </span><span class="hljs-keyword">bullet </span>etc
+          - <span class="hljs-keyword">Bullet </span>list <span class="hljs-keyword">item </span><span class="hljs-number">2</span>
+</code></pre>
+      <ol>
+        <li>
+          A numbered list
+          <ol>
+            <li>A nested numbered list</li>
+            <li>Which is numbered</li>
+          </ol>
+        </li>
+        <li>Which is numbered</li>
+      </ol>
+      <pre><code> Markup : <span class="hljs-number">1.</span> A numbered <span class="hljs-built_in">list</span>
+              <span class="hljs-number">1.</span> A nested numbered <span class="hljs-built_in">list</span>
+              <span class="hljs-number">2.</span> Which <span class="hljs-keyword">is</span> numbered
+          <span class="hljs-number">2.</span> Which <span class="hljs-keyword">is</span> numbered
+</code></pre>
+      <ul>
+        <li>[ ] An uncompleted task</li>
+        <li>[x] A completed task</li>
+      </ul>
+      <pre><code> Markup : - [ ] <span class="hljs-type">An</span> uncompleted <span class="hljs-keyword">task</span>
+          - [x] A completed <span class="hljs-keyword">task</span>
+</code></pre>
+      <ul>
+        <li>
+          [ ] An uncompleted task
+          <ul>
+            <li>[ ] A subtask</li>
+          </ul>
+        </li>
+      </ul>
+      <pre><code> Markup : - <span class="hljs-string">[ ]</span> An uncompleted task
+              - <span class="hljs-string">[ ]</span> A subtask
+</code></pre>
+      <blockquote>
+        <p>Blockquote</p>
+        <blockquote>
+          <p>Nested blockquote</p>
+        </blockquote>
+      </blockquote>
+      <pre><code><span class="hljs-keyword">Markup </span>:  &gt; <span class="hljs-keyword">Blockquote
+</span>          &gt;&gt; Nested <span class="hljs-keyword">Blockquote</span>
+</code></pre>
+      <p><em>Horizontal line :</em></p>
+      <hr />
+      <pre><code>Markup :  - - - -
+</code></pre>
+      <p><em>Image with alt :</em></p>
+      <p>
+        <img
+          src="http://via.placeholder.com/200x150"
+          alt="picture alt"
+          title="Title is optional"
+        />
+      </p>
+      <pre><code>Markup : ![<span class="hljs-string">picture alt</span>](<span class="hljs-link">http://via.placeholder.com/200x150 "Title is optional"</span>)
+</code></pre>
+      <p>Foldable text:</p>
+      <details>
+        <summary>Title 1</summary>
+        <p>Content 1 Content 1 Content 1 Content 1 Content 1</p>
+      </details>
+      <details>
+        <summary>Title 2</summary>
+        <p>Content 2 Content 2 Content 2 Content 2 Content 2</p>
+      </details>
+
+      <pre><code>Markup : <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">details</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">summary</span>&gt;</span>Title 1<span class="hljs-tag">&lt;/<span class="hljs-name">summary</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Content 1 Content 1 Content 1 Content 1 Content 1<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">details</span>&gt;</span></span>
+</code></pre>
+      <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>HTML<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span> Some HTML code here <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+</code></pre>
+      <p>Link to a specific part of the page:</p>
+      <p><a href="#TOP">Go To TOP</a></p>
+      <pre><code>Markup : [<span class="hljs-string">text goes here</span>](<span class="hljs-link">#section_name</span>)
+<span class="hljs-code">          section_title&lt;a name="section_name"&gt;&lt;/a&gt;    </span>
+</code></pre>
+      <p>Hotkey:</p>
+      <p><kbd>⌘F</kbd></p>
+      <p><kbd>⇧⌘F</kbd></p>
+      <pre><code>Markup : <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">kbd</span>&gt;</span>⌘F<span class="hljs-tag">&lt;/<span class="hljs-name">kbd</span>&gt;</span></span>
+</code></pre>
+      <p>Hotkey list:</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Key</th>
+            <th>Symbol</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Option</td>
+            <td>⌥</td>
+          </tr>
+          <tr>
+            <td>Control</td>
+            <td>⌃</td>
+          </tr>
+          <tr>
+            <td>Command</td>
+            <td>⌘</td>
+          </tr>
+          <tr>
+            <td>Shift</td>
+            <td>⇧</td>
+          </tr>
+          <tr>
+            <td>Caps Lock</td>
+            <td>⇪</td>
+          </tr>
+          <tr>
+            <td>Tab</td>
+            <td>⇥</td>
+          </tr>
+          <tr>
+            <td>Esc</td>
+            <td>⎋</td>
+          </tr>
+          <tr>
+            <td>Power</td>
+            <td>⌽</td>
+          </tr>
+          <tr>
+            <td>Return</td>
+            <td>↩</td>
+          </tr>
+          <tr>
+            <td>Delete</td>
+            <td>⌫</td>
+          </tr>
+          <tr>
+            <td>Up</td>
+            <td>↑</td>
+          </tr>
+          <tr>
+            <td>Down</td>
+            <td>↓</td>
+          </tr>
+          <tr>
+            <td>Left</td>
+            <td>←</td>
+          </tr>
+          <tr>
+            <td>Right</td>
+            <td>→</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Emoji:</p>
+      <p>
+        :exclamation: Use emoji icons to enhance text. :+1: Look up emoji codes
+        at
+        <a href="http://emoji-cheat-sheet.com/">emoji-cheat-sheet.com</a>
+      </p>
+      <pre><code><span class="hljs-keyword">Markup </span>: <span class="hljs-meta">Code</span> appears <span class="hljs-keyword">between </span>colons :EMOJICODE:
+</code></pre>
+    </div>
+  </body>
+</html>
